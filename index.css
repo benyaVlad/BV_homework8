@@ -1,7 +1,7 @@
 body {
     min-width: 1100px;
     min-height: 600px;
-    margin: 20px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap:5%;
@@ -31,6 +31,8 @@ h2{
     height: 852px;
     background-color: black;
     border-radius: 24px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 .logo{
     height: 15%;
@@ -39,7 +41,7 @@ h2{
     align-items: center;
     margin-bottom: 50px;
 }
-.navigation{
+.sidebar_menu{
     height:45%;
     display: flex;
     flex-direction: column;
@@ -87,12 +89,12 @@ h2{
 .boy{
     margin-right: 6vw;
 }
-.spanish {
+.current_course {
     height: 80px;
     display: flex;
     margin-bottom: 30px;
 }
-.spanish_container{
+.current_course_container{
     background-color:#F5F5F7;
     border-radius: 14px;
     width: 80%;
@@ -102,15 +104,15 @@ h2{
 }
 .image_around{
     background-color: white;
-    width: 64px;
+    width: 10%;
     height: 64px;
     border-radius: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.spanish_courses_text{
-    width: 135px;
+.current_course_text{
+    width: 30%;
 
 }
 .spanish_courses_text_header{
@@ -124,7 +126,7 @@ h2{
     font-size: 13px;
     line-height: 15px;
 }
-.spanish_courses_progress{
+.current_course_progress{
     background-image: url("img/progress.svg");
     background-repeat: no-repeat;
     background-size: auto;
@@ -134,12 +136,12 @@ h2{
     justify-content: center;
     align-items: center;
 }
-.spanish_courses_progress p{
+.current_course_progress p{
     font-size: 13px;
 
 
 }
-.spanish_courses_but button{
+.current_course_but button{
     background: black;
     border-radius: 8px;
     width: 120px;
@@ -152,7 +154,7 @@ h2{
     font-size: 13px;
     line-height: 15px;
 }
-.spanish_courses_but button:hover{
+.current_course_but button:hover{
     transform: scale(1.1);
     background: transparent;
     color: black;
@@ -160,7 +162,7 @@ h2{
     font-size:15px;
 
 }
-.spanish_arrow{
+.current_course_arrow{
     width: 20%;
     display: flex;
     justify-content: flex-end;
@@ -168,7 +170,7 @@ h2{
     cursor: pointer;
     outline: none;
 }
-.spanish_arrow :hover{
+.current_course_arrow :hover{
     transform: scale(1.2);
 }
 .all_courses_menu{
@@ -209,9 +211,13 @@ h2{
     justify-content: space-around;
     align-items: center;
 }
+.all_courses_containers_text{
+    width: 25%;
+}
 .all_courses_containers_time{
     display: flex;
     gap:8px;
+    width:90px;
 }
 .all_courses_containers_rating{
     display: flex;
@@ -229,7 +235,7 @@ h2{
     margin-bottom: 15px;
 }
 .users_nav input{
-    width: 300px;;
+    width: 70%;
     height: 40px;
     background: url(img/search.svg) 15px;
     background-repeat: no-repeat;
@@ -248,9 +254,30 @@ h2{
     display: flex;
     gap: 5px;
 }
-.users_but img:first-child{
-    margin-right: 10px;
-    cursor: pointer;
+.bell{
+    width:35px;
+    height: 40px;
+    background-image: url("img/bell.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.counter{
+    width: 14px;
+    height: 14px;
+    background-color:#F45B5B;
+    color: #F5F5F7;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter p{
+    font-family: Roboto;
+    font-size: 10px;
+    line-height: 22px;
 }
 .users_but img:last-child{
     cursor:pointer;
@@ -258,11 +285,11 @@ h2{
 .users_courses{
     display: flex;
     justify-content: space-between;
-    width: 439px;
+    width: 95%;
     margin-top: 22px;
 }
 .users_courses_block{
-    width: 208px;
+    width: 47%;
     height: 96.33px;
     background: #F5F5F7;
     border-radius: 14px;
@@ -345,7 +372,7 @@ h2{
     margin-top: 50px;
 }
 .premium_block img{
-    width: 125px;
+    width: 30%;
     height: 125px;
 }
 .premium_block_context{
